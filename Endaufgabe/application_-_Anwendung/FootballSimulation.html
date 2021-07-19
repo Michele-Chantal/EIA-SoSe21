@@ -1,0 +1,120 @@
+<!-- Endabgabe EIA2 SoSe 21
+    Michele-Chantal Oeun, MKB2 265104
+    Zusammenarbeit mit Jessica Manzi  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="field.js"></script>
+    <script src="vector.js"></script>
+    <script src="moveables.js"></script>
+    <script src="ball.js"></script>
+    <script src="player.js"></script>
+    <script src="referee.js"></script>
+    <script src="linesman.js"></script>
+    <script src="main.js"></script>
+    <title>Endabgabe - Football Simulation</title>
+</head>
+
+<body>
+
+    <h1>Football Simulation</h1>
+
+    <div id="infos"></div>
+
+        <form>
+
+            <div id="text">
+
+                <p><i>Here you can choose the properties of your teams like the ranges of velocity and precision and the shirt color.
+                    <br> When a player in the simulation is in possession of the ball, you can choose where to shoot it with a doubleclick on the canvas.
+                    <br> Depending on the players individual stats, the ball will reach its target or miss it.
+                    <br> If you click on a player you can see their info. You can also switch the players.
+                </p></i>
+
+            </div><br>
+
+            <div id="team1">
+
+                <h2>Team 1</h2>
+
+                <fieldset id="shirtColor">
+                    <legend>Shirt Color</legend>
+                    <input type="color" id="shirtColor1" name="shirtColor1" value="#00FFFF">
+                </fieldset>
+
+                <fieldset id="Velocity">
+                    <legend>Velocity</legend>
+                    min: 0.001 <input type="range" name="minVelocity1" id="minVelocity1" min="0.0015" max="0.0055" step="0.001"> 0.005 </br>
+                    max: 0.005 <input type="range" name="maxVelocity1" id="maxVelocity1" min="0.0055" max="0.015" step="0.001"> 0.005
+                </fieldset>
+
+                <fieldset id="Precision">
+                    <legend>Precision</legend>
+                    min: 0 <input type="range" name="minPrecision1" id="minPrecision1" min="0" max="10" step="1"> 10 </br>
+                    max: 10 <input type="range" name="maxPrecision1" id="maxPrecision1" min="10" max="20" step="1"> 20
+                </fieldset>
+
+            </div><br>
+            
+
+            <div id="team2">
+
+                <h2>Team 2</h2>
+
+                <fieldset id="shirtColor">
+                    <legend>Shirt Color</legend>
+                    <input type="color" id="shirtColor2" name="shirtColor2" value="#FF0000">
+                </fieldset>
+
+                <fieldset id="Velocity">
+                    <legend>Velocity</legend>
+                    min: 0.0015 <input type="range" name="minVelocity2" id="minVelocity2" min="0.0015" max="0.0055" step="0.001"> 0.005 </br>
+                    max: 0.005 <input type="range" name="maxVelocity2" id="maxVelocity2" min="0.0055" max="0.015" step="0.001"> 0.001
+                </fieldset>
+
+                <fieldset id="Precision">
+                    <legend>Precision</legend>
+                    min: 0 <input type="range" name="minPrecision2" id="minPrecision2" min="0" max="10" step="1"> 10 </br>
+                    max: 10 <input type="range" name="maxPrecision2" id="maxPrecision2" min="10" max="20" step="1"> 20
+                </fieldset>
+
+            </div><br>
+
+        </form><br>
+
+    </div>
+
+    <button id="btnStart" type="button">Start</button><br>
+
+    <div id="canvasBox">
+
+        <div id="score">
+            <h2>Score</h2> <p id="showScore">0:0</p>
+            <h3>Possession:</h3>
+            <p id="inPossession">no player</p>
+        </div>
+
+        <div id="canvasContainer">
+            <canvas></canvas>
+        </div>
+
+        <div id="playerInfo">
+            <h2>Current player:</h2>
+            <p id="infoTeam">Team: None</p>
+            <p id="infoNumber">Shirt number: None</p>
+            <p id="infoVelocity">Velocity: None</p>
+            <p id="infoPrecision">Precision: None</p>
+            <button id="btnSwitch" type="button">Switch Player</button>
+        </div>
+
+    </div><br>
+
+</body>
+
+</html>
