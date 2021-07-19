@@ -12,8 +12,6 @@ namespace Endaufgabe_Football_Simulation {
         private target: Vector;
         private startPosition: Vector;
         
-
-        //
         constructor(_position: Vector, _velocity: number, _color: string, _precision: number, _playerNo: number, _team: string) {
             super(_position, _velocity);
             this.color = _color;

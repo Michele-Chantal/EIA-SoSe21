@@ -34,7 +34,6 @@ namespace Endaufgabe_Football_Simulation {
             this.y += _addend.y; 
         }
 
-        //
         copy(): Vector {
             return new Vector(this.x, this.y);
         }

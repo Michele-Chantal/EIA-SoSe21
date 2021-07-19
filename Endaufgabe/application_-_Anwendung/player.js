@@ -2,7 +2,6 @@
 var Endaufgabe_Football_Simulation;
 (function (Endaufgabe_Football_Simulation) {
     class Player extends Endaufgabe_Football_Simulation.Moveables {
-        //
         constructor(_position, _velocity, _color, _precision, _playerNo, _team) {
             super(_position, _velocity);
             this.perception = 110;

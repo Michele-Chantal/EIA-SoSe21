@@ -58,7 +58,6 @@ var Endaufgabe_Football_Simulation;
         Endaufgabe_Football_Simulation.crc2.fill();
         Endaufgabe_Football_Simulation.crc2.stroke();
         Endaufgabe_Football_Simulation.crc2.closePath();
-        //
         Endaufgabe_Football_Simulation.imageData = Endaufgabe_Football_Simulation.crc2.getImageData(0, 0, Endaufgabe_Football_Simulation.canvas.width, Endaufgabe_Football_Simulation.canvas.height);
     }
     Endaufgabe_Football_Simulation.drawField = drawField;

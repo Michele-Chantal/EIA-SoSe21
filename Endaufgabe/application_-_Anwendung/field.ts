@@ -63,8 +63,7 @@ namespace Endaufgabe_Football_Simulation {
         crc2.fill();
         crc2.stroke();
         crc2.closePath();
-
-        //
+        
         imageData = crc2.getImageData(0, 0, canvas.width, canvas.height);
     }
 }

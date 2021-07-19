@@ -26,7 +26,6 @@ var Endaufgabe_Football_Simulation;
             this.x += _addend.x;
             this.y += _addend.y;
         }
-        //
         copy() {
             return new Vector(this.x, this.y);
         }
